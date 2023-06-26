@@ -1,7 +1,10 @@
-package com.nju.edu.network.entity.packageFormat.packagehead;
+package com.nju.edu.network.entity.vo.packageFormat.packagehead;
 
-import com.nju.edu.network.entity.packageFormat.PackageHead;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
+@Data
+@AllArgsConstructor
 public class FrameHead extends PackageHead {
     String destinationMacAddress;
     String sourceMacAddress;
