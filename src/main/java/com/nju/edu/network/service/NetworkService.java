@@ -8,7 +8,7 @@ import java.util.List;
 public interface NetworkService {
     HostInfo createHost();
 
-    List<NetworkInterfacePackage> deliverData(String fromIp, String toIp, String data);
+    List<NetworkInterfacePackage> deliverData(String fromIp, String fromPort,String toIp, String toPort,String data);
 
     List<NetworkInterfacePackage> PackageInject(NetworkInterfacePackage networkInterfacePackage);
 

@@ -32,8 +32,8 @@ public class NetworkController {
     }
 
     @GetMapping("/deliver")
-    Response<List<NetworkInterfacePackage>> deliverData(@RequestParam String fromIp, @RequestParam String toIp, @RequestParam String data){
-        List<NetworkInterfacePackage> networkInterfacePackages = networkService.deliverData(fromIp, toIp, data);
+    Response<List<NetworkInterfacePackage>> deliverData(@RequestParam String fromIp, @RequestParam String fromPort,@RequestParam String toIp, @RequestParam String toPort,@RequestParam String data){
+        List<NetworkInterfacePackage> networkInterfacePackages = networkService.deliverData(fromIp, fromPort,toIp, toPort,data);
         return new Response<>(StatusCode.SUCCESS.getCode(), StatusCode.SUCCESS.getMessage(), networkInterfacePackages);
     }
 

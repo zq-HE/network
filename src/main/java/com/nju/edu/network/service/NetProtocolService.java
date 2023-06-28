@@ -19,7 +19,7 @@ public interface NetProtocolService {
      * @param data    内容为十进制的字符串
      * @return        NetworkInterfacePackage对象列表，其中协议的每个字段都为十进制的字符串，data为编码了的字符串（进制转换和string解析使用Utils工具类完成即可）
      */
-    List<NetworkInterfacePackage> deliverData(String fromIp, String toIp, String data);
+    List<NetworkInterfacePackage> deliverData(String fromIp, String fromPort,String toIp, String toPort,String data);
 
     /**
      *

@@ -13,33 +13,21 @@ import java.util.List;
 public class NetProtocolAdaptor implements NetProtocolService {
     @Override
     public HostInfo createEndpoint() {
-        //test
-        return new HostInfo("192.168.1.1","00-16-EA-AE-3C-40");
+        return null;
     }
 
     @Override
-    public List<NetworkInterfacePackage> deliverData(String fromIp, String toIp, String data) {
-        //test
-        List<NetworkInterfacePackage> result = new ArrayList<>();
-        result.add(Utils.testCaseGenerator());
-        result.add(Utils.testCaseGenerator());
-        return result;
+    public List<NetworkInterfacePackage> deliverData(String fromIp, String fromPort,String toIp, String toPort,String data) {
+        return null;
     }
 
     @Override
     public List<NetworkInterfacePackage> packageInject(NetworkInterfacePackage networkInterfacePackage) {
-        //test
-        List<NetworkInterfacePackage> result = new ArrayList<>();
-        result.add(networkInterfacePackage);
-        return result;
+        return null;
     }
 
     @Override
     public List<NetworkInterfacePackage> ping(String fromIp, String toIp) {
-        //test
-        List<NetworkInterfacePackage> result = new ArrayList<>();
-        result.add(Utils.testCaseGenerator());
-        result.add(Utils.testCaseGenerator());
-        return result;
+        return null;
     }
 }
